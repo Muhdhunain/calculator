@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container"><br>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="contain p-1">
+                    <div name="calculator" class="main1 p-5"><br>
+                        <input disabled type="text" class="display border-1 p-3 w-100 disinp bg-white text-black"
+                            name="display" id="display"><br><br>
+                    </div>
+                    <div name="calculator" class="main2 p-0">
+                        <input type="button" onclick="Clear()" class="btn btn-secondary btnon m-1" value="Cl">
+                        <input type="button" onclick="Delete()" class="btn btn-secondary btnon m-1" value="Del">
+                        <input type="button" onclick="check()" class="btn btn-secondary btnth m-1"
+                            value="Check"><br><br>
+                        <input type="button" onclick="display('7')" class="btn btn-secondary btntw m-1" value="7">
+                        <input type="button" onclick="display('8')" class="btn btn-secondary btntw m-1" value="8">
+                        <input type="button" onclick="display('9')" class="btn btn-secondary btntw m-1" value="9">
+                        <input type="button" onclick="display('%')" class="btn btn-secondary btntw m-1"
+                            value="%"><br><br>
+                        <input type="button" onclick="display('6')" class="btn btn-secondary btntw m-1" value="6">
+                        <input type="button" onclick="display('5')" class="btn btn-secondary btntw m-1" value="5">
+                        <input type="button" onclick="display('4')" class="btn btn-secondary btntw m-1" value="4">
+                        <input type="button" onclick="display('/')" class="btn btn-secondary btntw m-1"
+                            value="/"><br><br>
+                        <input type="button" onclick="display('1')" class="btn btn-secondary btntw m-1" value="1">
+                        <input type="button" onclick="display('2')" class="btn btn-secondary btntw m-1" value="2">
+                        <input type="button" onclick="display('3')" class="btn btn-secondary btntw m-1" value="3">
+                        <input type="button" onclick="display('*')" class="btn btn-secondary btntw m-1"
+                            value="*"><br><br>
+                        <input type="button" onclick="display('0')" class="btn btn-secondary btntw m-1" value="0">
+                        <input type="button" onclick="display('.')" class="btn btn-secondary btntw m-1" value=".">
+                        <input type="button" onclick="display('+')" class="btn btn-secondary btntw m-1" value="+">
+                        <input type="button" onclick="display('-')" class="btn btn-secondary btntw m-1"
+                            value="-"><br><br>
+                        <input type="button" onclick="display('(')" class="btn btn-secondary btnon m-1" value="(">
+                        <input type="button" onclick="display(')')" class="btn btn-secondary btnon m-1" value=")">
+                        <input type="button" onclick="evaluation()" class="btn btn-secondary btnth m-1"
+                            value="="><br><br>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
